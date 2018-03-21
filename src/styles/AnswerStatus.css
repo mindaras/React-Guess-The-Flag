@@ -1,0 +1,42 @@
+.answer-status
+{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  height: 30px;
+  opacity: 0;
+  transform: translateY(15px);
+}
+.answer-status.correct
+{
+  color: green;
+  animation: fadeIn .3s forwards;
+}
+.answer-status.incorrect
+{
+  color: red;
+  animation: fadeIn .3s forwards;
+}
+@keyframes fadeIn
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 767px)
+{
+  .answer-status
+  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}

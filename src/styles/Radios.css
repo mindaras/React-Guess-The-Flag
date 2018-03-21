@@ -1,0 +1,28 @@
+.radios
+{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeIn .3s forwards;
+}
+@media screen and (max-width: 991px)
+{
+  .radios
+  {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 767px)
+{
+  .radios
+  {
+    margin-top: 40px;
+  }
+}

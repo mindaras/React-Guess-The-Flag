@@ -1,0 +1,32 @@
+.flag
+{
+  display: block;
+  max-width: 50vw;
+  max-height: 30vw;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  box-shadow: 2px 2px 40px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  animation: fadeIn .3s forwards;
+}
+@media screen and (max-width: 991px)
+{
+  .flag
+  {
+    max-width: 80vw;
+    max-height: 40vw;
+  }
+}
+@media screen and (max-width: 767px)
+{
+  .flag
+  {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+  }
+}
